@@ -1,0 +1,225 @@
+You are a senior frontend developer specializing in modern portfolio websites. 
+Your task is to completely redesign an existing React/Vite/TypeScript portfolio 
+website to match a new visual style and layout inspired by a reference site.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CURRENT WEBSITE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+URL: https://spoo-portfolio.vercel.app/
+Tech stack: Vite + React + TypeScript
+This is Sphoorthi Malladad's existing portfolio. 
+Keep ALL the existing content and information — 
+just redesign the visual style and layout completely.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+REFERENCE / TEMPLATE WEBSITE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+URL: https://www.adithyapradeep.com/#home
+Study this site carefully for:
+- Overall layout structure and section flow
+- Typography style (clean, minimal, modern)
+- Color palette and use of whitespace
+- Navigation style (fixed top nav, smooth scroll)
+- Hero section design and animation style
+- How projects/work are displayed (cards, hover effects)
+- How skills are displayed
+- Scroll animations and micro-interactions
+- Mobile responsiveness approach
+- Footer design
+
+DO NOT copy any of Adithya's content — 
+only replicate the visual style, layout, and design patterns.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+OWNER INFORMATION — USE THIS CONTENT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Name: Sphoorthi Malladad
+Title: Aspiring Product Manager | AI & Data | Ex-Oracle | MSIS @ IU Kelley
+Email: smallada@iu.edu
+Phone: (812) 671-6369
+LinkedIn: linkedin.com/in/sphoorthi-s-malladad
+Location: Bloomington, Indiana, USA
+Graduating: December 2026
+
+Tagline (use in hero):
+"I live for the conversation before the code —
+figuring out what to build, who it's for,
+and whether it actually matters."
+
+About paragraph:
+"I spent two years at Oracle close enough to 
+the product to realize that what I wanted was 
+the conversation before the code. Now I'm 
+pursuing my MSIS at Indiana University Kelley, 
+building toward a career in product management 
+at the intersection of AI and human experience."
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTIONS TO INCLUDE (in this order)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. NAVIGATION (fixed top, smooth scroll)
+   - Links: Home, About, Experience, Projects, Skills, Contact
+   - Logo: "SM" or "Sphoorthi" on the left
+   - Clean minimal style, slight blur/glass effect on scroll
+
+2. HERO SECTION
+   - Large greeting: "Hi, I'm Sphoorthi 👋"
+   - Animated typewriter for rotating roles:
+     "Product Manager" / "AI Enthusiast" / 
+     "Data Analyst" / "Problem Solver"
+   - Short tagline below
+   - Two CTA buttons: "View My Work" and "Download Resume"
+   - Subtle scroll indicator at bottom
+   - Leave a placeholder for profile photo: [PHOTO PLACEHOLDER]
+
+3. ABOUT SECTION
+   - Two column layout: text left, visual right
+   - About paragraph text
+   - Key stats in cards:
+     * 2+ Years at Oracle
+     * 12 User Interviews (CareFlow)
+     * 3rd Place EY Case Competition
+     * Graduating Dec 2026
+   - Leave placeholder for photo: [PHOTO PLACEHOLDER]
+
+4. EXPERIENCE SECTION (timeline style)
+   - AI Product Manager Intern — FlairX (May 2026 – Aug 2026)
+     Remote | Prompt design, product roadmaps, AI feature specs,
+     user research, GTM strategy
+   
+   - Customer Success & Product Intern — RagaAI (May 2026 – Aug 2026)
+     On-site | Healthcare AI agent deployment, 
+     allergy clinic suite, customer success
+   
+   - Associate Consultant — Oracle (Aug 2023 – Apr 2025)
+     Bangalore, India | PRDs, UAT, Agile/Scrum, 
+     Python+SQL automation (30% effort reduction),
+     Flexcube banking for Middle East & Africa banks
+   
+   - Graduate Assistant — Indiana University (Aug 2025 – Present)
+     Bloomington, IN | Excel/Power BI dashboards, 
+     data reporting, process analysis
+
+5. PROJECTS SECTION (card grid with hover effects)
+   Leave image placeholders for each — [PROJECT IMAGE]
+
+   Card 1: CareFlow — AI Healthcare Workflow Platform
+   Tag: Healthcare AI | Product Management
+   Description: End-to-end product lifecycle for a nursing home 
+   workflow platform. 12 user interviews, RICE roadmap, OKRs, 
+   $16M IT portfolio analysis.
+   Links: [Live Demo Placeholder] [GitHub Placeholder]
+
+   Card 2: Vyry Quest — PM Analysis (Phygtl)
+   Tag: Product Analysis | UX Research  
+   Description: First-impression PM analysis of an AR campus 
+   quest app. Identified critical onboarding friction, 
+   terminology gaps, and zero active quests as a dead-end 
+   for new users.
+   Links: [Case Study Placeholder]
+
+   Card 3: Oracle Financial Data Automation
+   Tag: Python | SQL | Automation
+   Description: Built a Python+SQL automation tool replacing 
+   manual financial data validation — reducing manual effort 
+   by 30% and improving data accuracy across enterprise systems.
+   Links: [GitHub Placeholder]
+
+   Card 4: RagaAI Allergy Clinic Suite — Product Research
+   Tag: AI Product | Healthcare
+   Description: Deep research into RagaAI's 11-agent allergy 
+   clinic suite. Mapped full agent architecture, clinical 
+   workflows, and key metrics including <3% no-show rate 
+   and 85% intake time reduction.
+   Links: [Case Study Placeholder]
+
+6. SKILLS SECTION
+   Display as visual tag cloud or grouped pill badges:
+
+   Product: Product Management, PRD Writing, Roadmapping, 
+   RICE Framework, OKRs, User Research, Agile/Scrum, 
+   Waterfall, UAT, Stakeholder Management, GTM Strategy,
+   North Star Metrics, Competitive Analysis
+
+   Tools: Jira, Confluence, Figma, Miro, Power BI, 
+   GitHub, Notion, Vercel, Lovable, Replit
+
+   Technical: Python, SQL, Excel (Advanced), 
+   Power BI, Prompt Engineering, Claude AI, ChatGPT,
+   Azure DevOps (learning)
+
+   Soft Skills: Cross-functional Communication, 
+   Problem Solving, Data-Driven Decision Making, 
+   Fast Learner, Detail-Oriented
+
+7. CONTACT SECTION
+   - Clean minimal contact form (Name, Email, Message)
+   - OR just contact info cards with icons
+   - Email: smallada@iu.edu
+   - LinkedIn button
+   - "Open to PM internships and full-time roles 
+     starting December 2026"
+
+8. FOOTER
+   - Simple: "Designed & Built by Sphoorthi Malladad © 2026"
+   - Social icons: LinkedIn, GitHub, Email
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+DESIGN REQUIREMENTS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Color palette (match reference site's clean minimal feel):
+- Primary background: #0A0A0A or #0F0F0F (near black)
+- Secondary background: #111111 or #1A1A1A (card backgrounds)
+- Primary accent: Choose ONE from:
+  Option A: Electric blue #4F8EF7
+  Option B: Mint green #4ECCA3  
+  Option C: Warm purple #8B5CF6
+- Text primary: #FFFFFF
+- Text secondary: #A0A0A0
+- Border/divider: #2A2A2A
+
+Typography:
+- Headings: Inter or Outfit (Google Font)
+- Body: Inter
+- Monospace accents: Fira Code or JetBrains Mono
+
+Animations:
+- Smooth fade-in on scroll (Intersection Observer)
+- Typewriter effect in hero
+- Hover lift on project cards
+- Smooth section transitions
+- NO heavy animations that slow the page
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+TECHNICAL REQUIREMENTS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+- Keep the existing Vite + React + TypeScript stack
+- Use Tailwind CSS for styling
+- Use Framer Motion for animations
+- Mobile-first, fully responsive
+- Fast load time — optimize all assets
+- Single page application with smooth scroll
+- All placeholder images use a consistent 
+  placeholder style (subtle gradient boxes with 
+  centered text saying what goes there)
+- Add <!-- PHOTO: replace this --> comments 
+  everywhere a real photo should go
+- Add <!-- LINK: add URL here --> comments 
+  for all placeholder links
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+DELIVERABLE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Provide the complete file structure with all code:
+- src/App.tsx (main app)
+- src/components/ (one file per section)
+- src/index.css (global styles)
+- tailwind.config.js
+- package.json with all dependencies
+
+Make sure it runs with: npm install && npm run dev
+
+The final result should look like a polished, 
+modern dark-mode portfolio that a top tech company 
+PM candidate would be proud to share.
