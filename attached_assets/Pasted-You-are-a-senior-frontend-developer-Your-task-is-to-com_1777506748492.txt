@@ -1,0 +1,344 @@
+You are a senior frontend developer. Your task is to 
+completely redesign a React/Vite/TypeScript portfolio 
+to exactly match a reference design in terms of visual 
+style, layout, typography, color, and interactions — 
+but using entirely different content.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+DESIGN REFERENCE — MATCH THIS EXACTLY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Reference site: https://www.adithyapradeep.com
+
+EXACT visual specs from studying the reference:
+
+COLORS:
+- Background: #F2EDE4 (warm cream, used everywhere)
+- Text primary: #0A0A0A (near black)
+- Text secondary: #666666 (muted gray for dates, labels)
+- Borders: #D0CAC0 (warm light gray)
+- Hover/accent: #0A0A0A (just darker, no color accent)
+- NO blue, green, purple, or any color accents anywhere
+- Everything is black, white, and warm cream only
+
+TYPOGRAPHY:
+- Name on homepage: Very large serif font, 
+  mixed regular + italic weights
+  Use: "Playfair Display" from Google Fonts
+- Section headings (Experience., Projects., etc): 
+  Large serif, around 64-72px, ends with a period
+  Use: "Playfair Display"
+- Body text: Clean sans-serif, around 16px
+  Use: "Inter" from Google Fonts  
+- Nav name (top left): Inter, uppercase, 
+  letter-spacing: 0.2em, small ~13px
+- Nav links (top right): Inter, lowercase, 
+  14px, normal weight
+- Active nav link: wrapped in [brackets] like [work]
+- Skill/tech tags: monospace or Inter, 
+  wrapped in [brackets] like [Python] [SQL]
+- Section labels (PRODUCT ENGINEERING INTERN): 
+  uppercase, very small, letter-spacing wide
+- Dates: small, uppercase, spaced like "JUN, 2025"
+
+NAVIGATION:
+- Fixed top, full width
+- Left: "SPHOORTHI MALLADAD" in small spaced caps
+- Right: links — home  work  projects  blog  resume
+- Active page gets [brackets] around it
+- Very minimal, no background color, 
+  slight border-bottom on scroll maybe
+- Pages are SEPARATE ROUTES, not sections 
+  (like the reference — clicking work goes to /work)
+
+SPACING & LAYOUT:
+- Extremely generous whitespace everywhere
+- Max content width: ~1200px, centered
+- Section padding: very large, 80-120px top/bottom
+- Cards and items have lots of breathing room
+- Grid for projects: 2 columns on desktop, 
+  1 column on mobile
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PAGES — BUILD ALL OF THESE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+PAGE 1: HOME ("/")
+Layout (matching reference exactly):
+- Left half: 
+  * Huge name in serif:
+    "SPHOORTHI" (regular weight, very large)
+    "MALLADAD" (italic, very large)
+  * Spaced label below: "PRODUCT MANAGER"
+  * Current role line (larger, readable):
+    "AI PM Intern @ 🔷 FlairX"
+    (match style of "Product Intern @ RagaAI logo" 
+    on reference)
+  * Short bio paragraph below:
+    "Working at the intersection of AI and product 
+    strategy, translating ambiguous problems into 
+    shipped, usable products."
+  * Social icons row at bottom:
+    Twitter, GitHub, LinkedIn, Calendar/Email
+  * "Links :)" text below icons
+
+- Right half:
+  * Floating card panel (like the blog preview 
+    on reference homepage) showing:
+    LATEST PROJECT label
+    "CareFlow — Healthcare Workflow Platform"
+    APR, 2026
+    Short description of CareFlow
+    READ → link
+    
+    Then two more smaller cards below:
+    PREV #1 — "Oracle Financial Automation" 
+    PREV #2 — "Vyry Quest PM Analysis"
+  * Add label "projects" with curved arrow 
+    pointing to the card panel 
+    (exact same as reference)
+
+PAGE 2: WORK ("/work")
+Header: "Experience." (large serif with period)
+
+Timeline entries (vertical, with circle dot 
+on left side, matching reference exactly):
+
+Entry 1: FlairX
+AI PRODUCT MANAGER INTERN | MAY, 2026 - AUG, 2026
+FlairX is an AI-driven interview platform 
+helping companies hire smarter.
+- Conducting market, user, and competitor research 
+  focused on AI-driven hiring trends
+- Collaborating with engineering and AI/ML teams 
+  to build and improve AI-powered features
+- Supporting product roadmaps, PRDs, 
+  and AI feature specifications
+- Working on prompt design and model 
+  behavior evaluation
+- Analyzing interview data to optimize 
+  AI performance
+Tags: [Product Management] [AI] [PRD Writing] 
+[Prompt Engineering] [User Research]
+WEBSITE link (external icon)
+
+Entry 2: RagaAI
+CUSTOMER SUCCESS & PRODUCT INTERN | MAY, 2026 - AUG, 2026
+RagaAI builds healthcare AI agent suites 
+for allergy clinics and radiology workflows.
+- Supporting deployment of allergy clinic 
+  AI agent suite across US clinics
+- Working with Practice Managers and 
+  clinical staff on adoption and success
+- Tracking operational metrics including 
+  no-show rates and claim denial reduction
+- Bridging customer feedback into 
+  product improvements
+Tags: [Healthcare AI] [Customer Success] 
+[AI Agents] [Product] [Clinical Workflows]
+WEBSITE link
+
+Entry 3: Oracle
+ASSOCIATE CONSULTANT | AUG, 2023 - APR, 2025
+Oracle builds enterprise software powering 
+global financial and banking operations.
+- Supported cross-functional coordination 
+  across product, engineering, and QA teams
+- Led Agile/Scrum ceremonies — sprint planning, 
+  backlog refinement, release management
+- Used Jira and Confluence for project 
+  documentation and resource tracking
+- Conducted competitive analysis to support 
+  product roadmap and budgeting decisions
+- Led UAT — designed test plans, coordinated 
+  technical reviews, reduced defect rates by 15%
+- Built Python + SQL automation tool reducing 
+  manual reporting effort by 30%
+Tags: [Agile/Scrum] [Jira] [Confluence] 
+[Python] [SQL] [UAT] [Stakeholder Management]
+WEBSITE link
+
+Entry 4: Indiana University
+GRADUATE ASSISTANT | AUG, 2025 - PRESENT
+Supporting program leadership at Indiana 
+University Kelley School of Business.
+- Built Excel and Power BI dashboards for 
+  program performance tracking
+- Synthesized operational data into structured 
+  reports for leadership decision-making
+Tags: [Power BI] [Excel] [Data Analytics] 
+[Reporting]
+
+PAGE 3: PROJECTS ("/projects")
+Header: "Selected Work." (large serif with period)
+
+Show GitHub contribution-style grid at top 
+(or a simple decorative element if grid 
+is complex — keep it clean)
+
+2-column project grid, each card has:
+- Large image area (placeholder gradient 
+  with project name if no image)
+- Project name (large, left-aligned)
+- Year (right-aligned, same line as name)
+- Horizontal rule
+- Short description
+- Tags in [brackets]
+
+Projects:
+
+Project 1: CareFlow
+2026
+Healthcare workflow management platform for 
+nursing homes. Built end-to-end from 12 user 
+interviews through RICE roadmap, OKRs, 
+and $16M IT portfolio analysis.
+[Healthcare] [Product Management] 
+[User Research] [RICE] [AI]
+<!-- IMAGE PLACEHOLDER -->
+<!-- LINK: add live demo URL -->
+<!-- LINK: add case study URL -->
+
+Project 2: Vyry Quest — PM Analysis
+2026
+First-impression PM teardown of an AR campus 
+quest app. Identified critical onboarding gaps, 
+terminology friction, and zero active quests 
+as a dead-end new user experience.
+[UX Research] [Product Analysis] 
+[Onboarding] [AR]
+<!-- IMAGE PLACEHOLDER -->
+<!-- LINK: add case study URL -->
+
+Project 3: Oracle Financial Automation
+2025
+Python + SQL automation tool replacing 10+ 
+hours of weekly manual financial data 
+validation — reducing effort by 30%.
+[Python] [SQL] [Automation] [Oracle]
+<!-- IMAGE PLACEHOLDER -->
+<!-- LINK: add GitHub URL -->
+
+Project 4: RagaAI Allergy Clinic Research
+2026
+Deep product research into RagaAI's 11-agent 
+allergy clinic suite. Mapped full agent 
+architecture, clinical workflows, and key 
+metrics including <3% no-show rate.
+[Healthcare AI] [Product Research] 
+[AI Agents] [Clinical]
+<!-- IMAGE PLACEHOLDER -->
+<!-- LINK: add case study URL -->
+
+PAGE 4: BLOG ("/blog")  
+Header: "Thoughts." (large serif with period)
+
+Horizontal rule below header.
+
+List of articles, each separated by a rule:
+Format: Title (large serif) + Date (right-aligned)
+Then 2-line description
+Then "READ →" link
+
+Articles:
+1. "Why PM is Really Just Asking Better Questions"
+   APR 29, 2026
+   Product managers don't ship features. 
+   They ship decisions. And the quality of 
+   those decisions depends entirely on the 
+   quality of the questions asked before 
+   the first line of code is written.
+   <!-- LINK: add article URL -->
+
+2. "What I Learned Doing 12 User Interviews 
+   for CareFlow"
+   DEC 15, 2025
+   What users say they need and what they 
+   actually need are almost never the same 
+   thing. Here's what I discovered running 
+   real user interviews for a healthcare 
+   workflow product.
+   <!-- LINK: add article URL -->
+
+3. "The Allergy Clinic Agent: A PM's 
+   Breakdown of RagaAI's Suite"
+   APR 20, 2026
+   A deep dive into 11 AI agents built for 
+   allergy clinics — how they work, what 
+   problems they solve, and what the product 
+   decisions behind them reveal about 
+   building AI for healthcare.
+   <!-- LINK: add article URL -->
+
+Note: Add <!-- PLACEHOLDER: write and link 
+real articles before launching --> comment
+
+PAGE 5: RESUME ("/resume")
+Header: "Resume." (large serif with period)
+
+Two buttons below header (pill style, outlined):
+[ DOWNLOAD ]  [ LINK ]
+
+Then embedded resume preview (use an iframe 
+or image placeholder):
+<!-- RESUME: embed PDF or image here -->
+<!-- LINK: add Google Drive resume link -->
+<!-- DOWNLOAD: add direct PDF download link -->
+
+Add expand/fullscreen button top-right 
+of the preview (like reference)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+FOOTER (appears on all pages)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Bottom of every page:
+- 4 social icons in a row (Twitter/X, 
+  GitHub, LinkedIn, Email/Calendar)
+  Use simple SVG icons, black, no fill
+- Below icons: "Links :)" in small text
+- Match reference exactly — very minimal
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+TECHNICAL REQUIREMENTS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Stack: Vite + React + TypeScript (keep existing)
+Styling: Tailwind CSS
+Routing: React Router DOM (v6) for separate pages
+Fonts: Load from Google Fonts:
+  - Playfair Display (400, 400i, 700)
+  - Inter (300, 400, 500)
+Animations: 
+  - Subtle fade-in on page load only
+  - NO heavy scroll animations
+  - Hover: very subtle opacity change on links
+  - Cursor: default (no custom cursor)
+Images: Use styled placeholder divs with 
+  bg-gradient and centered italic text 
+  saying what image goes there
+Mobile: Fully responsive — stack to 1 column,
+  nav collapses gracefully
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+DELIVERABLE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Complete file structure:
+- src/App.tsx (router setup)
+- src/pages/Home.tsx
+- src/pages/Work.tsx  
+- src/pages/Projects.tsx
+- src/pages/Blog.tsx
+- src/pages/Resume.tsx
+- src/components/Nav.tsx
+- src/components/Footer.tsx
+- src/index.css (global styles + font imports)
+- tailwind.config.js
+- package.json
+
+Runs with: npm install && npm run dev
+
+The result should look indistinguishable 
+from the reference in terms of visual style — 
+warm cream background, black serif headings, 
+clean sans body, generous whitespace, 
+[bracket] tags, and editorial minimalism.
+Every placeholder should have a clear 
+HTML comment explaining what to add.

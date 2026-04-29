@@ -1,30 +1,37 @@
 import React from 'react';
-import Navigation from '@/components/Navigation';
-import Hero from '@/components/Hero';
-import About from '@/components/About';
-import Experience from '@/components/Experience';
-import Projects from '@/components/Projects';
-import Skills from '@/components/Skills';
-import Contact from '@/components/Contact';
+import { BrowserRouter as Router, Routes, Route, Outlet } from 'react-router-dom';
+import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
-import { Toaster } from '@/components/ui/toaster';
+import Home from '@/pages/Home';
+import Work from '@/pages/Work';
+import Projects from '@/pages/Projects';
+import Blog from '@/pages/Blog';
+import Resume from '@/pages/Resume';
 
-function App() {
+function Layout() {
   return (
-    <div className="dark min-h-screen bg-background text-foreground selection:bg-primary/30 selection:text-primary font-sans">
-      <Navigation />
-      <main>
-        <Hero />
-        <About />
-        <Experience />
-        <Projects />
-        <Skills />
-        <Contact />
+    <div className="min-h-[100dvh] bg-background text-foreground font-sans flex flex-col">
+      <Nav />
+      <main className="flex-1 w-full max-w-[1200px] mx-auto px-6 md:px-12 pt-32 pb-24">
+        <Outlet />
       </main>
       <Footer />
-      <Toaster />
     </div>
   );
 }
 
-export default App;
+export default function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="work" element={<Work />} />
+          <Route path="projects" element={<Projects />} />
+          <Route path="blog" element={<Blog />} />
+          <Route path="resume" element={<Resume />} />
+        </Route>
+      </Routes>
+    </Router>
+  );
+}
