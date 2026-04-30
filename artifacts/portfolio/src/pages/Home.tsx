@@ -52,19 +52,26 @@ export default function Home() {
       <div className="relative">
         {/* Card stack: CareFlow on top, Oracle and Vyry peek from behind */}
         <div className="relative group/stack">
-          {/* "projects" label tucked at the top-left corner of the card */}
-          <div className="absolute z-40 -top-7 -left-3 md:-top-8 md:-left-6 flex items-end gap-1 text-accent -rotate-6 pointer-events-none">
-            <span className="font-serif italic text-xl md:text-2xl">projects</span>
-            <svg width="56" height="44" viewBox="0 0 56 44" fill="none" aria-hidden="true">
+          {/* "projects" label — handwritten annotation pointing into the card's top-left corner */}
+          <div className="absolute z-40 -top-16 -left-10 md:-top-[78px] md:-left-14 flex flex-col items-start text-accent -rotate-3 pointer-events-none">
+            <span className="font-serif italic text-xl md:text-2xl ml-2">projects</span>
+            <svg
+              width="60"
+              height="50"
+              viewBox="0 0 60 50"
+              fill="none"
+              aria-hidden="true"
+              className="-mt-1"
+            >
               <path
-                d="M4 6 Q 28 2 46 36"
+                d="M12 4 Q 14 28 52 44"
                 stroke="currentColor"
                 strokeWidth="1.5"
                 fill="none"
                 strokeLinecap="round"
               />
               <path
-                d="M38 28 L 46 36 L 40 41"
+                d="M44 38 L 52 44 L 46 49"
                 stroke="currentColor"
                 strokeWidth="1.5"
                 fill="none"
