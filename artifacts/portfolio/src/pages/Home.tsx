@@ -52,28 +52,6 @@ export default function Home() {
       <div className="relative">
         {/* Card stack: CareFlow on top, Oracle and Vyry peek from behind */}
         <div className="relative group/stack">
-          {/* "projects" label tucked at the top-left corner of the card */}
-          <div className="absolute z-40 -top-7 -left-3 md:-top-8 md:-left-6 flex items-end gap-1 text-accent -rotate-6 pointer-events-none">
-            <span className="font-serif italic text-xl md:text-2xl">projects</span>
-            <svg width="56" height="44" viewBox="0 0 56 44" fill="none" aria-hidden="true">
-              <path
-                d="M4 6 Q 28 2 46 36"
-                stroke="currentColor"
-                strokeWidth="1.5"
-                fill="none"
-                strokeLinecap="round"
-              />
-              <path
-                d="M38 28 L 46 36 L 40 41"
-                stroke="currentColor"
-                strokeWidth="1.5"
-                fill="none"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          </div>
-
           {/* Main Card (CareFlow) — top of deck */}
           <div className="relative z-30 border border-border bg-background p-10 md:p-12 transition-shadow duration-500 group-hover/stack:shadow-[0_12px_32px_rgba(0,0,0,0.08)]">
             <p className="font-sans uppercase tracking-[0.2em] text-[11px] text-muted-foreground mb-5">
