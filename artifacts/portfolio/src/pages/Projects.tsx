@@ -89,7 +89,7 @@ export default function Projects() {
 
             <div className="mt-auto flex gap-4">
               {project.links.map((link, j) => (
-                <a key={j} href={link.url} className="font-sans text-[12px] uppercase tracking-widest text-foreground hover:opacity-60 transition-opacity">
+                <a key={j} href={link.url} className="font-sans text-[12px] uppercase tracking-widest text-foreground hover:text-accent transition-colors">
                   {link.label} →
                   {/* LINK: add URL here */}
                 </a>

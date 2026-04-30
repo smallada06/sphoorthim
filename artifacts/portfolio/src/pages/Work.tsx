@@ -73,7 +73,7 @@ export default function Work() {
           {experiences.map((exp, i) => (
             <div key={i} className="relative pl-8 md:pl-12">
               {/* Timeline Dot */}
-              <div className="absolute -left-[5px] top-[6px] w-[9px] h-[9px] rounded-full bg-background border border-foreground" />
+              <div className="absolute -left-[5px] top-[6px] w-[9px] h-[9px] rounded-full bg-accent" />
 
               <p className="font-sans uppercase tracking-[0.2em] text-[12px] text-muted-foreground mb-4">
                 {exp.title}
@@ -112,8 +112,8 @@ export default function Work() {
               </div>
 
               {exp.link && (
-                <a href={exp.link} className="inline-flex items-center gap-2 font-sans text-[12px] uppercase tracking-widest text-foreground hover:opacity-60 transition-opacity">
-                  WEBSITE
+                <a href={exp.link} className="inline-flex items-center gap-2 font-sans text-[12px] uppercase tracking-widest text-foreground hover:text-accent transition-colors group/link">
+                  <span>WEBSITE</span>
                   <ExternalLink size={12} strokeWidth={2} />
                 </a>
               )}

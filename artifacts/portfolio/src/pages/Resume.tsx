@@ -9,11 +9,11 @@ export default function Resume() {
       </h1>
 
       <div className="flex gap-4 mb-12">
-        <a href="#" className="border border-border rounded-full px-6 py-2 font-sans text-[12px] uppercase tracking-widest text-foreground hover:bg-[#EBE5DB] transition-colors">
+        <a href="#" className="border border-foreground rounded-full px-6 py-2 font-sans text-[12px] uppercase tracking-widest text-foreground hover:bg-foreground hover:text-background transition-colors">
           DOWNLOAD
           {/* DOWNLOAD: add direct PDF download link */}
         </a>
-        <a href="#" className="border border-border rounded-full px-6 py-2 font-sans text-[12px] uppercase tracking-widest text-foreground hover:bg-[#EBE5DB] transition-colors">
+        <a href="#" className="border border-foreground rounded-full px-6 py-2 font-sans text-[12px] uppercase tracking-widest text-foreground hover:bg-foreground hover:text-background transition-colors">
           LINK
           {/* LINK: add Google Drive resume link */}
         </a>

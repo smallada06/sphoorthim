@@ -21,7 +21,7 @@ export default function Nav() {
   ];
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'border-b border-border bg-[#F2EDE4]/90 backdrop-blur-sm' : ''}`}>
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'border-b border-border bg-background/90 backdrop-blur-sm' : ''}`}>
       <div className="max-w-[1200px] mx-auto px-6 md:px-12 py-6 flex items-center justify-between">
         <Link to="/" className="font-sans uppercase tracking-[0.2em] text-[13px] text-foreground hover:opacity-60 transition-opacity">
           SPHOORTHI MALLADAD
@@ -34,7 +34,7 @@ export default function Nav() {
               key={link.name}
               to={link.path}
               className={({ isActive }) =>
-                `font-sans lowercase text-[14px] transition-opacity hover:opacity-60 text-foreground`
+                `font-sans lowercase text-[14px] transition-opacity hover:opacity-60 ${isActive ? 'text-accent' : 'text-foreground'}`
               }
             >
               {({ isActive }) => isActive ? `[${link.name}]` : link.name}
@@ -60,7 +60,7 @@ export default function Nav() {
               to={link.path}
               onClick={() => setMobileMenuOpen(false)}
               className={({ isActive }) =>
-                `font-sans lowercase text-[14px] transition-opacity text-foreground py-2`
+                `font-sans lowercase text-[14px] transition-opacity py-2 ${isActive ? 'text-accent' : 'text-foreground'}`
               }
             >
               {({ isActive }) => isActive ? `[${link.name}]` : link.name}

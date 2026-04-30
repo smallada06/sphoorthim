@@ -49,8 +49,8 @@ export default function Blog() {
                 {article.description}
               </p>
 
-              <a href={article.link} className="font-sans text-[12px] uppercase tracking-widest text-foreground hover:opacity-60 transition-opacity">
-                READ →
+              <a href={article.link} className="font-sans text-[12px] uppercase tracking-widest text-foreground hover:text-accent transition-colors">
+                READ <span className="text-accent">→</span>
                 {/* LINK: add article URL */}
               </a>
             </div>
