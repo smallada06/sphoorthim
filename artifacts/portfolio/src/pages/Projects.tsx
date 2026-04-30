@@ -1,6 +1,16 @@
 import React from 'react';
 
-const projects = [
+type Project = {
+  title: string;
+  subtitle?: string;
+  year: string;
+  description: string;
+  tags: string[];
+  links: { label: string; url: string }[];
+  placeholderText: string;
+};
+
+const projects: Project[] = [
   {
     title: "CareFlow",
     year: "2026",
@@ -13,34 +23,37 @@ const projects = [
     placeholderText: "CareFlow cover image"
   },
   {
-    title: "Vyry Quest — PM Analysis",
-    year: "2026",
-    description: "First-impression PM teardown of an AR campus quest app. Identified critical onboarding gaps, terminology friction, and zero active quests as a dead-end new user experience.",
-    tags: ["UX Research", "Product Analysis", "Onboarding", "AR"],
-    links: [
-      { label: "case study", url: "#" }
-    ],
-    placeholderText: "Vyry Quest cover image"
-  },
-  {
-    title: "Oracle Financial Automation",
+    title: "AI & Enterprise Transformation Strategy",
+    subtitle: "EY Case Competition – 3rd Place",
     year: "2025",
-    description: "Python + SQL automation tool replacing 10+ hours of weekly manual financial data validation — reducing effort by 30%.",
-    tags: ["Python", "SQL", "Automation", "Oracle"],
-    links: [
-      { label: "GitHub", url: "#" }
-    ],
-    placeholderText: "Oracle Automation cover image"
-  },
-  {
-    title: "RagaAI Allergy Clinic Research",
-    year: "2026",
-    description: "Deep product research into RagaAI's 11-agent allergy clinic suite. Mapped full agent architecture, clinical workflows, and key metrics including <3% no-show rate.",
-    tags: ["Healthcare AI", "Product Research", "AI Agents", "Clinical"],
+    description: "Designed a digital transformation strategy integrating SAP S/4HANA, SAP BTP, and SAP IBP. Built ROI/TCO model projecting $5.5M+ NPV, 35% ROI, and 3-year breakeven.",
+    tags: ["Product Strategy", "Digital Transformation", "Enterprise Systems", "SAP", "Business Analysis"],
     links: [
       { label: "case study", url: "#" }
     ],
-    placeholderText: "RagaAI Research cover image"
+    placeholderText: "EY Case Competition cover image"
+  },
+  {
+    title: "Enterprise Digital Transformation Strategy",
+    subtitle: "Toyota Material Handling – Finalist",
+    year: "2025",
+    description: "Designed a digital transformation strategy integrating SAP S/4HANA, SAP BTP, and SAP IBP. Built ROI/TCO model projecting $5.5M+ NPV, 35% ROI, and 3-year breakeven.",
+    tags: ["Digital Transformation", "Enterprise Architecture", "SAP", "Supply Chain", "Strategy", "Financial Modeling"],
+    links: [
+      { label: "case study", url: "#" }
+    ],
+    placeholderText: "Toyota Material Handling cover image"
+  },
+  {
+    title: "Bike Rental Demand Forecasting",
+    subtitle: "Seoul Bike Sharing System",
+    year: "2025",
+    description: "Analyzed 8,700+ hourly records combining weather and temporal data. Performed feature engineering, EDA, and regression modeling to identify key demand drivers.",
+    tags: ["Data Analytics", "Machine Learning", "Forecasting", "Python", "Data Visualization", "Statistical Modeling"],
+    links: [
+      { label: "case study", url: "#" }
+    ],
+    placeholderText: "Seoul Bike Sharing cover image"
   }
 ];
 
@@ -64,7 +77,7 @@ export default function Projects() {
               {/* IMAGE PLACEHOLDER: replace this */}
             </div>
 
-            <div className="flex justify-between items-baseline mb-4">
+            <div className="flex justify-between items-baseline mb-2">
               <h2 className="font-serif text-[28px] md:text-[32px] text-foreground">
                 {project.title}
               </h2>
@@ -72,6 +85,12 @@ export default function Projects() {
                 {project.year}
               </span>
             </div>
+
+            {project.subtitle && (
+              <p className="font-sans italic text-[14px] text-muted-foreground mb-4">
+                {project.subtitle}
+              </p>
+            )}
 
             <div className="w-full h-px bg-border mb-6" />
 

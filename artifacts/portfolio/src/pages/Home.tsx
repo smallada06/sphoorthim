@@ -58,7 +58,7 @@ export default function Home() {
               LATEST PROJECT
             </p>
             <h3 className="font-serif text-[28px] md:text-[32px] leading-tight text-foreground mb-4">
-              CareFlow — Healthcare Workflow Platform
+              CareFlow: Healthcare Workflow Platform
             </h3>
             <p className="font-sans text-[13px] uppercase tracking-wider text-muted-foreground mb-6">
               APR, 2026
@@ -79,7 +79,7 @@ export default function Home() {
           >
             <div className="relative overflow-hidden border border-border bg-background p-6 flex justify-between items-center gap-4">
               <h4 className="font-serif text-[20px] text-foreground truncate">
-                Oracle Financial Automation
+                AI & Enterprise Transformation Strategy
               </h4>
               <span className="font-sans text-[13px] text-muted-foreground shrink-0">2025</span>
               {/* Charcoal "back-of-card" overlay that fades in when stack fans out */}
@@ -94,9 +94,9 @@ export default function Home() {
           >
             <div className="relative overflow-hidden border border-border bg-background p-6 flex justify-between items-center gap-4">
               <h4 className="font-serif text-[20px] text-foreground truncate">
-                Vyry Quest PM Analysis
+                Enterprise Digital Transformation
               </h4>
-              <span className="font-sans text-[13px] text-muted-foreground shrink-0">2026</span>
+              <span className="font-sans text-[13px] text-muted-foreground shrink-0">2025</span>
               <div className="absolute inset-0 bg-[#2A2A2A]/80 opacity-0 group-hover/stack:opacity-100 transition-opacity duration-500 pointer-events-none" />
             </div>
           </div>

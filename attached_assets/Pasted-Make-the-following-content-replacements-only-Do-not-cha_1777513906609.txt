@@ -1,0 +1,69 @@
+Make the following content replacements only. 
+Do not change any styling, layout, or colors.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+HOMEPAGE FIX:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Remove the em dash "—" from the title 
+"CareFlow — Healthcare Workflow Platform"
+Change it to:
+"CareFlow: Healthcare Workflow Platform"
+OR simply:
+"CareFlow Healthcare Workflow Platform"
+(whichever looks cleaner without the dash)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PROJECTS PAGE — REPLACE 3 PROJECTS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+REPLACE project "Vyry Quest PM Analysis" with:
+
+Title: AI & Enterprise Transformation Strategy
+Subtitle: EY Case Competition – 3rd Place
+Year: 2025
+Description: Designed a digital transformation 
+strategy integrating SAP S/4HANA, SAP BTP, 
+and SAP IBP. Built ROI/TCO model projecting 
+$5.5M+ NPV, 35% ROI, and 3-year breakeven.
+Tags: [Product Strategy] [Digital Transformation] 
+[Enterprise Systems] [SAP] [Business Analysis]
+
+---
+
+REPLACE project "Oracle Financial Automation" with:
+
+Title: Enterprise Digital Transformation Strategy
+Subtitle: Toyota Material Handling – Finalist
+Year: 2025
+Description: Designed a digital transformation 
+strategy integrating SAP S/4HANA, SAP BTP, 
+and SAP IBP. Built ROI/TCO model projecting 
+$5.5M+ NPV, 35% ROI, and 3-year breakeven.
+Tags: [Digital Transformation] [Enterprise Architecture] 
+[SAP] [Supply Chain] [Strategy] [Financial Modeling]
+
+---
+
+REPLACE project "RagaAI Allergy Clinic Research" with:
+
+Title: Bike Rental Demand Forecasting
+Subtitle: Seoul Bike Sharing System
+Year: 2025
+Description: Analyzed 8,700+ hourly records 
+combining weather and temporal data. Performed 
+feature engineering, EDA, and regression modeling 
+to identify key demand drivers.
+Tags: [Data Analytics] [Machine Learning] 
+[Forecasting] [Python] [Data Visualization] 
+[Statistical Modeling]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Also update the homepage preview cards 
+to match — the two smaller cards 
+(Oracle, Vyry) should now show the 
+new project names:
+- "AI & Enterprise Transformation Strategy"  2025
+- "Enterprise Digital Transformation"  2025
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+No other changes. Content swap only.
