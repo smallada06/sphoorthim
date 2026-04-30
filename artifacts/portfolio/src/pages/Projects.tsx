@@ -12,7 +12,7 @@ type Project = {
 
 const projects: Project[] = [
   {
-    title: "CareFlow",
+    title: "CareFlow: Healthcare Workflow Platform",
     year: "2026",
     description: "Healthcare workflow management platform for nursing homes. Built end-to-end from 12 user interviews through RICE roadmap, OKRs, and $16M IT portfolio analysis.",
     tags: ["Healthcare", "Product Management", "User Research", "RICE", "AI"],
