@@ -4,7 +4,7 @@ import { Twitter, Github, Linkedin, Mail } from 'lucide-react';
 
 export default function Home() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-8 items-start animate-in fade-in duration-700">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-12 md:items-center animate-in fade-in duration-700">
       {/* Left Column */}
       <div className="flex flex-col gap-6">
         <div>
@@ -49,26 +49,38 @@ export default function Home() {
       </div>
 
       {/* Right Column */}
-      <div className="relative md:mt-16">
-        <div className="absolute -top-12 right-12 md:-left-8 md:-top-16 flex items-end gap-2 text-accent -rotate-12">
-          <span className="font-serif italic text-lg">projects</span>
-          <svg width="40" height="40" viewBox="0 0 100 100" fill="none" className="rotate-[120deg]">
-            <path d="M10 90 Q 50 10 90 10" stroke="currentColor" strokeWidth="2" fill="none" />
-            <path d="M70 10 L 90 10 L 90 30" stroke="currentColor" strokeWidth="2" fill="none" />
+      <div className="relative flex flex-col">
+        {/* "projects" label with curved arrow — sits to the LEFT of the card, slightly above its top edge */}
+        <div className="self-start mb-6 md:mb-0 md:absolute md:-top-3 md:-left-28 lg:-left-36 flex items-end gap-1 text-accent -rotate-6 z-10 pointer-events-none">
+          <span className="font-serif italic text-xl md:text-2xl">projects</span>
+          <svg width="64" height="52" viewBox="0 0 64 52" fill="none" aria-hidden="true">
+            <path
+              d="M4 8 Q 32 4 52 42"
+              stroke="currentColor"
+              strokeWidth="1.5"
+              fill="none"
+              strokeLinecap="round"
+            />
+            <path
+              d="M44 34 L 52 42 L 46 47"
+              stroke="currentColor"
+              strokeWidth="1.5"
+              fill="none"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
           </svg>
         </div>
 
-        <div className="flex flex-col gap-4">
-          {/* Main Card */}
-          <div className="border border-border p-8 bg-background hover:bg-secondary transition-colors cursor-pointer group">
-            <p className="font-sans uppercase tracking-[0.2em] text-[11px] text-muted-foreground mb-4">
+        <div className="flex flex-col gap-5">
+          {/* Main Card — floating feel with generous padding */}
+          <div className="border border-border bg-background p-10 md:p-12 shadow-[0_1px_2px_rgba(0,0,0,0.04)] hover:bg-secondary transition-colors cursor-pointer group">
+            <p className="font-sans uppercase tracking-[0.2em] text-[11px] text-muted-foreground mb-5">
               LATEST PROJECT
             </p>
-            <div className="flex justify-between items-start gap-4 mb-4">
-              <h3 className="font-serif text-[28px] md:text-[32px] leading-tight text-foreground">
-                CareFlow — Healthcare Workflow Platform
-              </h3>
-            </div>
+            <h3 className="font-serif text-[28px] md:text-[32px] leading-tight text-foreground mb-4">
+              CareFlow — Healthcare Workflow Platform
+            </h3>
             <p className="font-sans text-[13px] uppercase tracking-wider text-muted-foreground mb-6">
               APR, 2026
             </p>
