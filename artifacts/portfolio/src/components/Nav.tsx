@@ -17,6 +17,7 @@ export default function Nav() {
     { name: 'work', path: '/work' },
     { name: 'projects', path: '/projects' },
     { name: 'blog', path: '/blog' },
+    { name: 'books', path: '/books' },
     { name: 'resume', path: '/resume' },
   ];
 

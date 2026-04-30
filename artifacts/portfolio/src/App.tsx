@@ -6,6 +6,7 @@ import Home from '@/pages/Home';
 import Work from '@/pages/Work';
 import Projects from '@/pages/Projects';
 import Blog from '@/pages/Blog';
+import Books from '@/pages/Books';
 import Resume from '@/pages/Resume';
 
 function Layout() {
@@ -29,6 +30,7 @@ export default function App() {
           <Route path="work" element={<Work />} />
           <Route path="projects" element={<Projects />} />
           <Route path="blog" element={<Blog />} />
+          <Route path="books" element={<Books />} />
           <Route path="resume" element={<Resume />} />
         </Route>
       </Routes>

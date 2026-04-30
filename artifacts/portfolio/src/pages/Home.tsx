@@ -48,33 +48,34 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Right Column */}
-      <div className="relative flex flex-col">
-        {/* "projects" label with curved arrow — sits to the LEFT of the card, slightly above its top edge */}
-        <div className="self-start mb-6 md:mb-0 md:absolute md:-top-3 md:-left-28 lg:-left-36 flex items-end gap-1 text-accent -rotate-6 z-10 pointer-events-none">
-          <span className="font-serif italic text-xl md:text-2xl">projects</span>
-          <svg width="64" height="52" viewBox="0 0 64 52" fill="none" aria-hidden="true">
-            <path
-              d="M4 8 Q 32 4 52 42"
-              stroke="currentColor"
-              strokeWidth="1.5"
-              fill="none"
-              strokeLinecap="round"
-            />
-            <path
-              d="M44 34 L 52 42 L 46 47"
-              stroke="currentColor"
-              strokeWidth="1.5"
-              fill="none"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
-        </div>
+      {/* Right Column — card stack with deck-shuffle hover */}
+      <div className="relative">
+        {/* Card stack: CareFlow on top, Oracle and Vyry peek from behind */}
+        <div className="relative group/stack">
+          {/* "projects" label tucked at the top-left corner of the card */}
+          <div className="absolute z-40 -top-7 -left-3 md:-top-8 md:-left-6 flex items-end gap-1 text-accent -rotate-6 pointer-events-none">
+            <span className="font-serif italic text-xl md:text-2xl">projects</span>
+            <svg width="56" height="44" viewBox="0 0 56 44" fill="none" aria-hidden="true">
+              <path
+                d="M4 6 Q 28 2 46 36"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                fill="none"
+                strokeLinecap="round"
+              />
+              <path
+                d="M38 28 L 46 36 L 40 41"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                fill="none"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </div>
 
-        <div className="flex flex-col gap-5">
-          {/* Main Card — floating feel with generous padding */}
-          <div className="border border-border bg-background p-10 md:p-12 shadow-[0_1px_2px_rgba(0,0,0,0.04)] hover:bg-secondary transition-colors cursor-pointer group">
+          {/* Main Card (CareFlow) — top of deck */}
+          <div className="relative z-30 border border-border bg-background p-10 md:p-12 transition-shadow duration-500 group-hover/stack:shadow-[0_12px_32px_rgba(0,0,0,0.08)]">
             <p className="font-sans uppercase tracking-[0.2em] text-[11px] text-muted-foreground mb-5">
               LATEST PROJECT
             </p>
@@ -87,26 +88,39 @@ export default function Home() {
             <p className="font-sans text-[15px] leading-relaxed text-foreground mb-8">
               End-to-end product lifecycle for a nursing home workflow platform. 12 user interviews, RICE roadmap, OKRs, $16M IT portfolio analysis.
             </p>
-            <Link to="/projects" className="font-sans text-[13px] uppercase tracking-widest text-foreground group-hover:text-accent transition-colors">
+            <Link to="/projects" className="font-sans text-[13px] uppercase tracking-widest text-foreground hover:text-accent transition-colors">
               READ <span className="text-accent">→</span>
               {/* LINK: add specific URL here later */}
             </Link>
           </div>
 
-          {/* Sub Card 1 */}
-          <div className="border border-border p-6 bg-background hover:bg-secondary transition-colors cursor-pointer group flex justify-between items-center gap-4">
-            <h4 className="font-serif text-[20px] text-foreground truncate">
-              Oracle Financial Automation
-            </h4>
-            <span className="font-sans text-[13px] text-muted-foreground shrink-0">2025</span>
+          {/* Oracle — peeks ~16px behind CareFlow, slides down on hover */}
+          <div
+            className="relative z-20 mx-3 -mt-[60px] transition-all duration-500 ease-out group-hover/stack:mt-3 group-hover/stack:translate-x-1 group-hover/stack:-rotate-1"
+            style={{ willChange: 'transform' }}
+          >
+            <div className="relative overflow-hidden border border-border bg-background p-6 flex justify-between items-center gap-4">
+              <h4 className="font-serif text-[20px] text-foreground truncate">
+                Oracle Financial Automation
+              </h4>
+              <span className="font-sans text-[13px] text-muted-foreground shrink-0">2025</span>
+              {/* Charcoal "back-of-card" overlay that fades in when stack fans out */}
+              <div className="absolute inset-0 bg-[#2A2A2A]/80 opacity-0 group-hover/stack:opacity-100 transition-opacity duration-500 pointer-events-none" />
+            </div>
           </div>
 
-          {/* Sub Card 2 */}
-          <div className="border border-border p-6 bg-background hover:bg-secondary transition-colors cursor-pointer group flex justify-between items-center gap-4">
-            <h4 className="font-serif text-[20px] text-foreground truncate">
-              Vyry Quest PM Analysis
-            </h4>
-            <span className="font-sans text-[13px] text-muted-foreground shrink-0">2026</span>
+          {/* Vyry — peeks further behind, slides further on hover */}
+          <div
+            className="relative z-10 mx-6 -mt-[60px] transition-all duration-500 ease-out group-hover/stack:mt-3 group-hover/stack:translate-x-2 group-hover/stack:rotate-1"
+            style={{ willChange: 'transform' }}
+          >
+            <div className="relative overflow-hidden border border-border bg-background p-6 flex justify-between items-center gap-4">
+              <h4 className="font-serif text-[20px] text-foreground truncate">
+                Vyry Quest PM Analysis
+              </h4>
+              <span className="font-sans text-[13px] text-muted-foreground shrink-0">2026</span>
+              <div className="absolute inset-0 bg-[#2A2A2A]/80 opacity-0 group-hover/stack:opacity-100 transition-opacity duration-500 pointer-events-none" />
+            </div>
           </div>
         </div>
       </div>

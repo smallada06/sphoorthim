@@ -1,0 +1,181 @@
+Fix 1 — Projects label position:
+Move the "projects" italic label with the 
+curved arrow so it sits directly to the 
+top-left of the card panel, tucked closer 
+to the card — not floating in the middle 
+of the page above it. It should feel 
+attached to the card, like a label 
+pointing to it. Currently it's too 
+far from the card and too centered.
+
+Fix 2 — The hover shuffle effect:
+On the right side projects panel, implement 
+this hover interaction exactly like 
+adithyapradeep.com homepage:
+
+- The panel shows a stack of cards
+- The top card (CareFlow) is fully visible 
+  with white background
+- The cards below (Oracle, Vyry) peek out 
+  from behind like a stack
+- When you hover over the panel, the cards 
+  animate like a deck shuffle — the bottom 
+  cards slide up and forward with a dark 
+  grey/charcoal overlay on the ones behind
+- The effect gives a feeling of depth — 
+  like physical cards stacking
+- Use CSS transforms and transitions, 
+  z-index manipulation on hover
+- The dark overlay that appears is roughly 
+  #2A2A2A at 80% opacity on the background cards
+
+Now for the Books page, give Replit this:
+
+Add a new Books page at route "/books" 
+matching the exact style of the rest 
+of the site (cream background, black 
+serif headings, Inter body text).
+
+Header: "Books." (large Playfair Display 
+serif, same size as other page headers, 
+ends with a period)
+
+Subtitle below: 
+"A shelf of books that have shaped how 
+I think about product, people, and life."
+
+Two toggle buttons below subtitle 
+(pill style, outlined — match Adithya's 
+site exactly):
+[ TECH ]  [ OTHER ]
+TECH is selected by default (filled black, 
+white text). OTHER is outlined.
+Clicking switches the active tab.
+
+Each book is a card with:
+- Book title (medium serif, ~18px)
+- Year (right-aligned on same line as title)
+- Author name (small, muted gray, italic)
+- Description paragraph (Inter, 14px, muted)
+- Progress bar at bottom IF the book 
+  has a reading status:
+  * "yet to read" = 0% bar
+  * No label = assume read = 100% bar
+  Bar style: thin, full width, black fill, 
+  gray track — exactly like Adithya's site
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+TECH BOOKS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Inspired: How to Create Tech Products 
+   Customers Love
+   Year: 2008
+   Author: Marty Cagan
+   Status: Yet to read (0% bar)
+   Description: How to structure and staff 
+   a vibrant product organization, and how 
+   to discover and deliver technology 
+   products that customers will love.
+
+2. Good Strategy Bad Strategy: The Difference 
+   and Why It Matters
+   Year: 2011
+   Author: Richard P. Rumelt
+   Status: Read (100% bar)
+   Description: Explains how to create 
+   effective business strategies by 
+   distinguishing between good strategies 
+   that harness power effectively and bad 
+   strategies filled with buzzwords, using 
+   real-world examples.
+
+3. The Design of Everyday Things
+   Year: 1988
+   Author: Don Norman
+   Status: Yet to read (0% bar)
+   Description: A guide on designing 
+   intuitive products that prioritize 
+   usability and leverage principles of 
+   cognitive psychology for effortless 
+   user experiences.
+
+4. Continuous Discovery Habits
+   Year: 2021
+   Author: Teresa Torres
+   Status: Yet to read (0% bar)
+   Description: A structured approach to 
+   product discovery that helps teams 
+   balance action with doubt while making 
+   customer-focused decisions that create 
+   both business and customer value.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+OTHER BOOKS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. The Silent Patient
+   Year: 2025
+   Author: Alex Michaelides
+   Status: Read (100% bar)
+   Description: A psychological thriller 
+   centered on a woman who stops speaking 
+   after a violent crime and the therapist 
+   obsessed with uncovering why.
+
+2. Verity
+   Year: 2018
+   Author: Colleen Hoover
+   Status: Read (100% bar)
+   Description: A psychological thriller 
+   about a struggling writer hired to 
+   finish a bestselling series for injured 
+   author Verity Crawford — with dark 
+   secrets hidden in the manuscript.
+
+3. Norwegian Wood
+   Year: 1987
+   Author: Haruki Murakami
+   Status: Read (100% bar)
+   Description: A nostalgic coming-of-age 
+   novel following college student Toru 
+   Watanabe as he navigates love, loss, 
+   and memory in late 1960s Tokyo.
+
+4. The Things You Can See Only When 
+   You Slow Down
+   Year: 2018
+   Author: Haemin Sunim
+   Status: Read (100% bar)
+   Description: A guide through the busier 
+   parts of life, encouraging calm, peace, 
+   and inner reflection for a more 
+   intentional existence.
+
+5. The Mountain Is You: Transforming 
+   Self-Sabotage Into Self-Mastery
+   Year: 2020
+   Author: Brianna Wiest
+   Status: Read (100% bar)
+   Description: Explores how self-sabotage 
+   arises from conflicts between conscious 
+   goals and unconscious needs, guiding 
+   readers to transform destructive 
+   patterns into self-mastery.
+
+6. Untamed
+   Year: 2020
+   Author: Glennon Doyle
+   Status: Yet to read (0% bar)
+   Description: Glennon Doyle shares her 
+   journey from living to please others 
+   to embracing her authentic self after 
+   falling in love unexpectedly and 
+   navigating divorce.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Also add "books" to the navigation 
+between "blog" and "resume" on all pages.
+The active page should show [books] 
+with brackets when on this page.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
